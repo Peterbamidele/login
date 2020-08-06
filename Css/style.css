@@ -1,0 +1,97 @@
+.{
+    padding:0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background: url(../img/bg.png);
+    background-size: cover;
+    background-position: center;
+} 
+.container{
+    max-width: 400px;
+    width: 90%;
+    min-height: 500px;
+    border: 2px solid #378d4d;
+    box-shadow: 0 0 10px #378d4d, 0 0 10px #378d4d, 0 0 10px #378d4d;
+    border-radius: 10px;
+}
+.form.logo{
+    display: block;
+    width: 100px;
+    margin: 20px auto;  
+    margin-bottom: 70px; 
+}
+.form-ctrl{
+    display:flex;
+    margin: 20px auto;
+}
+.form-ctrl input{
+    display: inline-block;
+    flex: 1;
+    padding: 9px;
+    width: 100%;
+    border-top-left-radius: 20px;
+    border-bottom-left-radius: 20px;
+    background: transparent;
+    border: 2px solid #378d4d;
+    box-shadow: 0 0 10px #378d4d, 0 0 10px #378d4d, 0 0 10px #378d4d;
+    border-right: none;
+    outline: none;
+    font-size: 18px;
+    color: #378d4d;
+    padding-left: 20px;
+    transition: box-shadow 1s, color 1s;
+}  
+.form-ctrl input:hover, .form-ctrl input:focus{
+    border: 2px solid transparent;
+    color: teal;
+    box-shadow: 0 0 10px teal, 0 0 10px teal, 0 0 10px teal;
+}
+::placeholder{
+    color: #378d4d;
+    opacity: .9;
+}
+.form-ctrl img { 
+    width: 40px;
+    display: block;
+    margin: 0px 20px;
+}
+
+.r{
+    margin-top: 60px;
+}
+.r input   {
+    border-top-left-radius: 0px;
+    border-bottom-left-radius: 0px;
+    border-top-right-radius: 20px;
+    border-bottom-right-radius: 20px;
+    border-left: none; 
+    border-right: 2px solid #378d4d;
+}
+.form .btn{
+    display: block;
+    width: 200px;
+    background: transparent;
+    border-right: 2px solid #378d4d;
+    color: #378d4d;
+    padding: 7px;
+    font-size: 27px;
+    margin: 40px auto;
+    margin-top: 80px;
+    border-radius: 20px;
+    text-transform: uppercase;
+    box-shadow: 0 0 10px teal, 0 0 10px teal, 0 0 10px teal;
+    cursor: pointer;
+    transition: box-shadow 1s, color 1s;
+}
+.form .btn:hover{
+    border: 2px;
+    color:#378d4d;
+    box-shadow: 0 0 10px teal, 0 0 10px teal, 0 0 10px teal;
+}
